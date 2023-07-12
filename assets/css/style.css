@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -43,13 +44,15 @@ img {
 
 .logo__link {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #FFF;
-    transition: .3S;
+    transition: 1S;
 }
 
 .logo__link:hover {
-    opacity: .7;
+    font-weight: 600;
+    color: #26a69a;
+    text-shadow: -2px 0 20px #26a69a;
 }
 
 .nav__hero {
@@ -76,14 +79,16 @@ img {
 
 .nav__list--link {
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 4.8rem;
     color: #FFF;
-    transition: .3S;
+    transition: 1S;
 }
 
 .nav__list--link:hover {
-    opacity: .7;
+    font-weight: 600;
+    color: #26a69a;
+    text-shadow: -2px 0 20px #26a69a;
 }
 
 .secundary {
@@ -157,6 +162,7 @@ img {
     left: 0;
     height: 100%;
     transform: translateX(-105%);
+    z-index: 600;
 }
 
 .menu__mobile.active {
@@ -661,7 +667,7 @@ img {
     .second__table__certificate {
         width: 70%;
     }
-}
+}    
 
 @media (max-width: 992px) {
 

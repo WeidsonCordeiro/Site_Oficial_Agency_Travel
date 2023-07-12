@@ -23,6 +23,8 @@
 
 .fab,
 .fa-brands {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
     font-weight: 400; 
 }
 
