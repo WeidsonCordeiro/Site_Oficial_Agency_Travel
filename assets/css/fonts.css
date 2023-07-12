@@ -14,6 +14,18 @@
     src: url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.ttf") format("truetype"); }
+
+.fab,
+.fa-brands {
+    font-weight: 400; 
+}
+
 .fas,
 .fa-solid {
     font-family: "Font Awesome 6 Free";
@@ -43,4 +55,12 @@
 
 .fa-clock::before {
     content: "\f017"; 
+}
+
+.fa-instagram:before {
+    content: "\f16d"; 
+}
+
+.fa-whatsapp:before {
+    content: "\f232"; 
 }

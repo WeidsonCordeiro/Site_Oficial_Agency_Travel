@@ -1,7 +1,3 @@
-/*
-    ScrollBar -- https://www.youtube.com/watch?v=gbmV2Lh9dBM
-*/
-
 /* ------- Reset ------- */
 *,
 *::after,
@@ -40,6 +36,9 @@ img {
     background-size: cover;
     background-position: 0 70%;
     height: 58rem;
+    /*margin-top: -74px;
+    Ajustar depois
+    */
 }
 
 .logo__link {
@@ -54,6 +53,12 @@ img {
 }
 
 .nav__hero {
+    /*position: fixed;
+    background-color: transparent;
+    top: 0;
+    width: 100%;    
+    Ajustar depois
+    */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -72,7 +77,6 @@ img {
 .nav__list--link {
     font-size: 1.4rem;
     font-weight: 500;
-    /*height: 4.8rem;*/
     line-height: 4.8rem;
     color: #FFF;
     transition: .3S;
@@ -178,6 +182,73 @@ img {
     margin: 0 2rem 0 0;
 }
 
+/* ------- Content Carrousel ------- */
+
+.destin{
+    padding: 8rem 0;
+}
+
+.destin-container {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.destin-container--title{
+    text-align: center;
+}
+
+.destin-container--title h2{
+    font-size: 5rem;
+    color: #242424;
+    margin-bottom: 1.5rem;
+}
+.destin-container--title p{
+    font-size: 3rem;
+    color: #242424;
+}
+
+.destin-container--carrousel{
+    display: flex;
+    margin: 3rem auto;
+    overflow: hidden;
+    max-width: 1100px;
+}
+
+.container-carrousel{
+    display: flex;
+    transition: transform .5s ease-in-out;
+}
+
+.destin-container--carrousel .container-carrousel .box-destin{
+    /*object-fit: cover;*/
+    width: 29rem;
+    height: 35rem;
+    border-radius: 2rem;
+    box-shadow: -1px 1px 8px #757575;
+    margin: 1rem 1.5rem;
+}
+
+.destin-container--carrousel .container-carrousel .box-destin img{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0px 1px 8px #757575;
+}
+
+.destin-container--carrousel .container-carrousel .box-destin .info-travel{
+    margin: 2rem;
+    text-align: center;
+}
+
+.destin-container--carrousel .container-carrousel .box-destin .info-travel h3{
+    font-size: 2rem;
+    color: #464545;
+}
+
+
 /* ------- Content Banner ------- */
 
 .banner_plane {
@@ -186,8 +257,7 @@ img {
     background-size: cover;
     background-position: right 35% bottom 45%;
     display: flex;
-    height: 25rem;
-    /*background-color: #001042;*/
+    height: 30rem;
 }
 
 .banner_plane_central {
@@ -202,7 +272,7 @@ img {
 .banner_plane--title {
     text-align: center;
     color: #FFF;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
@@ -224,13 +294,13 @@ img {
 }
 
 .container__support--title h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #242424;
     margin-bottom: 2rem;
 }
 
 .container__support--title p {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #464545;
 }
 
@@ -301,8 +371,14 @@ img {
 }
 
 .container__support--display .card-img .face .back h4{
+    font-size: 1.8rem;
     margin-bottom: 3rem;
 }
+
+.container__support--display .card-img .face .back p{
+    font-size: 1.6rem;
+}
+
 
 .banner__support__mobile{
     display: none;
@@ -336,6 +412,16 @@ img {
 .banner__support__mobile .support-card-img .support-description p {
     font-size: 1.7rem;
     font-weight: 600;
+}
+
+.container__support--display .card-img .face:hover .front {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.container__support--display .card-img .face:hover .back {
+    transform: rotateY(0);
+    z-index: 1;
 }
 
 /* ------- Content Certificate ------- */
@@ -382,6 +468,104 @@ img {
 }
 
 
+/* ------- Whatsapp ------- */
+
+.banner_whatsapp{
+    right: 2rem;
+    bottom: 11rem;
+    z-index: 500;
+    position: fixed;
+}
+
+.banner_whatsapp .container_whatsapp a{
+    border-radius: 100%;
+    background-color: #FFF;
+    box-shadow: 3px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.banner_whatsapp .container_whatsapp a.wpp{
+    color: #FFF;
+    background-color: #46cc6e;
+    padding: 32px 0 10px 5px;
+}
+
+.banner_whatsapp .container_whatsapp a i{
+    font-size: 4rem;
+}
+
+.banner_whatsapp .container_whatsapp .icon{
+    display: inline-block;
+    opacity: 1;
+    margin: 0 0.25rem 0 0;
+    width: 5rem;
+    height: 1rem;
+    text-align: center;
+}
+
+
+/* ------- Footer ------- */
+
+.footer {
+    padding: 80px 0 0 0;
+    background-color: #0D0B20;
+    color: #FFF;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: unset;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 6rem 8rem 6rem;
+}
+
+.footer-container--information{
+    width: 50%;    
+}
+
+.footer-container--information .social{
+    padding-bottom: 2rem;
+}
+
+.footer-container--information .social h4{
+    font-size: 3rem;
+}
+
+.footer-container--information .social p{
+    font-size: 1.5rem;
+}
+
+.footer-container--information .contacts h4{
+    font-size: 1.5rem;
+}
+
+.footer-container--information .contacts p{
+    font-size: 1.5rem;
+}
+
+.footer-container--social-links h4{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.footer-container--social-links i{
+    font-size: 4rem;
+}
+
+.contacts--link{
+    color: #FFF;
+    transition: 1s;
+}
+
+.contacts--link:hover{
+    color: #26a69a;
+}
+
+.footer-container--social-links{
+    text-align: center;
+}
+
 /* ------- @Medias ------- */
 
 @media (max-width: 1500px){
@@ -389,6 +573,9 @@ img {
         max-width: 85%;
     }
     .container__certificate {
+        max-width: 85%;
+    }
+    .destin-container {
         max-width: 85%;
     }
 }
@@ -419,10 +606,39 @@ img {
         font-size: 4rem;
     }
 }
+
+@media (max-width: 1280px){
+    .destin-container--carrousel {
+        max-width: 100%;
+    }
+
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 27rem;
+        height: 33rem;
+    }
+}
+
+@media (max-width: 1145px){
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 26rem;
+        height: 32rem;
+    }
+
+    .destin-container--carrousel .container-carrousel .box-destin .info-travel h3 {
+        font-size: 1.7rem;
+    }
+}
     
 @media (max-width: 1080px){
     .container__certificate .first__table__certificate .container__certificate--title{
         font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1040px){
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 24rem;
+        height: 30rem;
     }
 }
 
@@ -444,33 +660,6 @@ img {
 
     .second__table__certificate {
         width: 70%;
-    }
-}
-
-@media (max-width: 768px){
-    .container__certificate .first__table__certificate{
-        width: 85%;
-    }
-
-    .second__table__certificate {
-        width: 85%;
-    }
-}
-
-@media (max-width: 480px){
-    .container__support--title p {
-        display: none;
-    }
-
-    .container__certificate .first__table__certificate{
-        width: 100%;
-    }
-    .second__table__certificate {
-        width: 100%;
-    }
-
-    .container__certificate .first__table__certificate .container__certificate--Subtitle{
-        font-size: 1.7rem;
     }
 }
 
@@ -522,3 +711,83 @@ img {
         flex-direction: column;
     }
 }
+
+@media (max-width: 850px){
+    .footer-container    {
+        flex-direction: column;
+        padding: 0 8rem 8rem 8rem;
+    }
+
+    .footer-container--information {
+        width: 100%;
+        margin-bottom: 6rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 880px){
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 21rem;
+        height: 27rem;
+    }
+
+    .destin-container--carrousel .container-carrousel .box-destin .info-travel h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    .container__certificate .first__table__certificate{
+        width: 85%;
+    }
+
+    .second__table__certificate {
+        width: 85%;
+    }
+
+    .destin-container--carrousel .container-carrousel .box-destin .info-travel {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 700px){
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 19rem;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 480px){
+    .container__support--title p {
+        display: none;
+    }
+
+    .container__certificate .first__table__certificate{
+        width: 100%;
+    }
+    .second__table__certificate {
+        width: 100%;
+    }
+
+    .container__certificate .first__table__certificate .container__certificate--Subtitle{
+        font-size: 1.7rem;
+    }
+
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 16rem;
+        height: 22rem;
+    }
+
+    .destin-container--carrousel .container-carrousel .box-destin .info-travel h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 370px){
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 15.7rem;
+        height: 21.7rem;
+    }
+}
+
