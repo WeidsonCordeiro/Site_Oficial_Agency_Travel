@@ -31,15 +31,16 @@ img {
 
 /* ------- Hero ------- */
 .hero {
-    position: relative;
-    background-image: linear-gradient(70.79deg, rgba(0, 0, 0, 0.8) 0%, rgba(68, 182, 182, 0.2) 100%), url(/assets/img/hero.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 70%;
-    height: 58rem;
-    /*margin-top: -74px;
-    Ajustar depois
-    */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    height: 8vh;
+    z-index: 9999;
 }
 
 .logo__link {
@@ -56,16 +57,10 @@ img {
 }
 
 .nav__hero {
-    /*position: fixed;
-    background-color: transparent;
-    top: 0;
-    width: 100%;    
-    Ajustar depois
-    */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 8vh;
+    width: 100%;
 }
 
 .nav__list {
@@ -92,14 +87,19 @@ img {
 }
 
 .secundary {
-    width: 85%;
-    margin: auto;
-    height: 48rem;
+    border-top: 1px solid transparent;
+    width: 100%;
+    padding: 0 0 8rem 0;
+    height: 80rem;
+    background-image: linear-gradient(70.79deg, rgba(0, 0, 0, 0.8) 0%, rgba(68, 182, 182, 0.2) 100%), url(/assets/img/hero.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 70%;
 }
 
 .secundary__hero {
     width: 60%;
-    margin: 8.0rem 0 0 5.5rem;
+    margin: 18rem 0 0 15.5rem;
 }
 
 .secundary--title {
@@ -174,14 +174,12 @@ img {
     background-color: #3761a150;
 }
 
-.menu__mobile__list li {
-    padding: 0 3.2rem;
+.menu__mobile__list{
+    padding-top: 6rem;
 }
 
-.img_mobile {
-    width: 7rem;
-    height: 7rem;
-    margin: 1.6rem 0 1.6rem 0;
+.menu__mobile__list li {
+    padding: 0 3.2rem;
 }
 
 .icon--menu {
@@ -689,8 +687,8 @@ img {
 
     /* ------- secundary hero ------- */
     .secundary__hero {
-        width: 100%;
-        margin: 8.0rem 0 0 0;
+        width: 80%;
+        margin: 18rem 0 0 12.5rem;
     }
 
     .secundary--title {
@@ -716,6 +714,22 @@ img {
     .banner__support__mobile {
         flex-direction: column;
     }
+
+       /* ------- secundary hero ------- */
+    .secundary__hero {
+        margin: 18rem 0 0 10.5rem;
+    }
+}
+
+@media (max-width: 880px){
+    .destin-container--carrousel .container-carrousel .box-destin {
+        width: 21rem;
+        height: 27rem;
+    }
+
+    .destin-container--carrousel .container-carrousel .box-destin .info-travel h3 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 850px){
@@ -729,16 +743,10 @@ img {
         margin-bottom: 6rem;
         text-align: center;
     }
-}
 
-@media (max-width: 880px){
-    .destin-container--carrousel .container-carrousel .box-destin {
-        width: 21rem;
-        height: 27rem;
-    }
-
-    .destin-container--carrousel .container-carrousel .box-destin .info-travel h3 {
-        font-size: 1.5rem;
+    /* ------- secundary hero ------- */
+    .secundary__hero {
+            margin: 18rem 0 0 8.5rem;
     }
 }
 
@@ -755,6 +763,11 @@ img {
     .destin-container--carrousel .container-carrousel .box-destin .info-travel {
         margin: 1rem;
     }
+
+    /* ------- secundary hero ------- */
+    .secundary__hero {
+        margin: 18rem 0 0 6.5rem;
+    }    
 }
 
 @media (max-width: 700px){
@@ -762,6 +775,10 @@ img {
         width: 19rem;
         height: 25rem;
     }
+    /* ------- secundary hero ------- */
+    .secundary__hero {
+        margin: 18rem 0 0 4.5rem;
+    }     
 }
 
 @media (max-width: 480px){
@@ -788,6 +805,11 @@ img {
     .destin-container--carrousel .container-carrousel .box-destin .info-travel h3 {
         font-size: 1.2rem;
     }
+
+    /* ------- secundary hero ------- */
+    .secundary__hero {
+        margin: 18rem 0 0 3.5rem;
+    }       
 }
 
 @media (max-width: 370px){
