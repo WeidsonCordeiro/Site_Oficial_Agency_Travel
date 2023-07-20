@@ -55,6 +55,10 @@
     content: "\f5c1"; 
 }
 
+.fa-suitcase::before {
+    content: "\f0f2"; 
+}
+
 .fa-clock::before {
     content: "\f017"; 
 }
