@@ -44,9 +44,11 @@ img {
 }
 
 .logo__link {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
     transition: 1S;
 }
 
@@ -67,13 +69,17 @@ img {
     display: flex;
 }
 
+.nav__list a{
+    text-transform: uppercase;
+}
+
 .nav__list li {
     letter-spacing: .3rem;
     margin-left: 3.2rem;
 }
 
 .nav__list--link {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 4.8rem;
     color: #FFF;
@@ -107,6 +113,9 @@ img {
     font-size: 4.8rem;
     margin: 2.3rem 0 1.4rem 0;
     color: #FFF;
+}
+.secundary--title span {
+    text-transform: uppercase;
 }
 
 .secundary--subtitle {
@@ -162,11 +171,13 @@ img {
     left: 0;
     height: 100%;
     transform: translateX(-105%);
+    transition: 1s;
     z-index: 600;
 }
 
 .menu__mobile.active {
     transform: translateX(0);
+    transition: 1s;
 }
 
 .menu__mobile--blue--blur {
@@ -533,7 +544,8 @@ img {
 }
 
 .footer-container--information .social h4{
-    font-size: 3rem;
+    font-size: 2.9rem;
+    text-transform: uppercase;
 }
 
 .footer-container--information .social p{
@@ -692,7 +704,7 @@ img {
     }
 
     .secundary--title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .secundary--subtitle {
@@ -782,6 +794,9 @@ img {
 }
 
 @media (max-width: 480px){
+    .logo__link {
+        font-size: 1.5rem;
+    }
     .container__support--title p {
         display: none;
     }
