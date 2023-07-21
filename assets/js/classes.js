@@ -81,12 +81,10 @@ class MenuScroll {
         this.height = this.bannerSecundary.offsetHeight;
         
         if(this.top > this.height){
-            console.log("Descendo")
             this.menuMain.style.cssText = this.styleCSSOne;
         }
         
-        if(this.top < this.height){
-            console.log("subindo")
+        if(this.top < this.height - 50){
             this.menuMain.style.cssText = this.styleCSSTwo;
         }
 
