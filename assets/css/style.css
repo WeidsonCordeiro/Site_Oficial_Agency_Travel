@@ -181,6 +181,7 @@ img {
 }
 
 .menu__mobile--blue--blur {
+    -webkit-backdrop-filter: blur(1.5rem);
     backdrop-filter: blur(1.5rem);
     background-color: #3761a150;
 }
